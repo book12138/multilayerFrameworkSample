@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MultilayerFrameworkSample.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:MultilayerFrameworkSample.WebApi.Aop.DalMethodIntercept">
+            <summary>
+            dal层方法拦截
+            </summary>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Aop.DalMethodIntercept.Intercept(Castle.DynamicProxy.IInvocation)">
+            <summary>
+            拦截dal层的所有方法，针对参数进行验证
+            </summary>
+            <param name="invocation"></param>
+        </member>
+        <member name="T:MultilayerFrameworkSample.WebApi.Controllers.AccountController">
+            <summary>
+            账户登录与注册服务
+            </summary>
+        </member>
+        <member name="F:MultilayerFrameworkSample.WebApi.Controllers.AccountController.userInfoBll">
+            <summary>
+            用户业务操作对象
+            </summary>
+        </member>
+        <member name="F:MultilayerFrameworkSample.WebApi.Controllers.AccountController.logger">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.#ctor(MultilayerFrameworkSample.IBLL.IUserInfoBll,Microsoft.Extensions.Logging.ILogger{MultilayerFrameworkSample.WebApi.Controllers.AccountController})">
+            <summary>
+            构造注入
+            </summary>
+            <param name="userInfoBll"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.Login(MultilayerFrameworkSample.Dto.LoginDto)">
+            <summary>
+            用户登录，获取token
+            </summary>        
+            <param name="loginDto">登录账户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.Register(MultilayerFrameworkSample.Dto.RegisterDto)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="registerDto">待注册账户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.Compare(System.String,System.String)">
+            <summary>
+            密码比对
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.Update(MultilayerFrameworkSample.Dto.AccountPasswordUpdateDto)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="accountPasswordUpdateDto">密码修改相关信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:MultilayerFrameworkSample.WebApi.Model.LoginResult">
+            <summary>
+            登录结果
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.LoginResult.IsSuccess">
+            <summary>
+            结果，是否成功
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.LoginResult.Token">
+            <summary>
+            登录成功后可以获得的token
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.LoginResult.Message">
+            <summary>
+            登录过程中的消息
+            </summary>
+        </member>
+        <member name="T:MultilayerFrameworkSample.WebApi.Model.PasswordCompareResult">
+            <summary>
+            密码比对结果
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.PasswordCompareResult.IsTure">
+            <summary>
+            是否正确
+            </summary>
+        </member>
+        <member name="T:MultilayerFrameworkSample.WebApi.Model.RegisterResult">
+            <summary>
+            账户注册结果
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.RegisterResult.IsSuccess">
+            <summary>
+            结果，是否成功
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.RegisterResult.Token">
+            <summary>
+            注册成功后可以获得的token
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.WebApi.Model.RegisterResult.Message">
+            <summary>
+            登录过程中的消息
+            </summary>
+        </member>
+    </members>
+</doc>

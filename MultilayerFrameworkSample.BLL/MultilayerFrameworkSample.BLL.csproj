@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultilayerFrameworkSample.Common\MultilayerFrameworkSample.Common.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.IBLL\MultilayerFrameworkSample.IBLL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.IDAL\MultilayerFrameworkSample.IDAL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.Model\MultilayerFrameworkSample.Model.csproj" />
+  </ItemGroup>
+
+</Project>

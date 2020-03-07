@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultilayerFrameworkSample.BLL\MultilayerFrameworkSample.BLL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.Common\MultilayerFrameworkSample.Common.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.DAL\MultilayerFrameworkSample.DAL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.IBLL\MultilayerFrameworkSample.IBLL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.IDAL\MultilayerFrameworkSample.IDAL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.Model\MultilayerFrameworkSample.Model.csproj" />
+  </ItemGroup>
+
+</Project>

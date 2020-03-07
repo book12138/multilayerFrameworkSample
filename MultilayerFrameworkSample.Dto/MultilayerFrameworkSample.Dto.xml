@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MultilayerFrameworkSample.Dto</name>
+    </assembly>
+    <members>
+        <member name="T:MultilayerFrameworkSample.Dto.AccountPasswordDto">
+            <summary>
+            账户密码和id
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.AccountPasswordDto.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.AccountPasswordDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:MultilayerFrameworkSample.Dto.AccountPasswordUpdateDto">
+            <summary>
+            账号密码修改
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.AccountPasswordUpdateDto.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.AccountPasswordUpdateDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:MultilayerFrameworkSample.Dto.LoginDto">
+            <summary>
+            登录请求数据传输模型
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.LoginDto.EMail">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.LoginDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:MultilayerFrameworkSample.Dto.RegisterDto">
+            <summary>
+            账户注册相关信息
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.RegisterDto.EMail">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:MultilayerFrameworkSample.Dto.RegisterDto.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+    </members>
+</doc>
