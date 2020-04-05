@@ -4,7 +4,6 @@ using System.Data;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using Dapper;
-using MultilayerFrameworkSample.IDAL.Base;
 using MultilayerFrameworkSample.Model.Base;
 using MultilayerFrameworkSample.Common;
 using System.Threading.Tasks;

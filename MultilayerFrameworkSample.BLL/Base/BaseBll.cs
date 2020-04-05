@@ -1,4 +1,4 @@
-﻿using MultilayerFrameworkSample.IDAL.Base;
+﻿using MultilayerFrameworkSample.DAL.Interface.Base;
 using MultilayerFrameworkSample.Model.Base;
 using System;
 using System.Collections.Generic;

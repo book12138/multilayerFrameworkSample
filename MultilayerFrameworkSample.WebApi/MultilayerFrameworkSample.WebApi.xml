@@ -30,7 +30,7 @@
             日志
             </summary>
         </member>
-        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.#ctor(MultilayerFrameworkSample.IBLL.IUserInfoBll,Microsoft.Extensions.Logging.ILogger{MultilayerFrameworkSample.WebApi.Controllers.AccountController})">
+        <member name="M:MultilayerFrameworkSample.WebApi.Controllers.AccountController.#ctor(MultilayerFrameworkSample.BLL.Interface.IUserInfoBll,Microsoft.Extensions.Logging.ILogger{MultilayerFrameworkSample.WebApi.Controllers.AccountController})">
             <summary>
             构造注入
             </summary>

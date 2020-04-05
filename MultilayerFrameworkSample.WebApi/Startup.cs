@@ -14,17 +14,17 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using MultilayerFrameworkSample.DAL;
-using MultilayerFrameworkSample.IDAL;
-using MultilayerFrameworkSample.IDAL.Base;
 using MultilayerFrameworkSample.DAL.Base;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using MultilayerFrameworkSample.WebApi.Filter;
-using MultilayerFrameworkSample.IBLL;
 using MultilayerFrameworkSample.BLL;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using MultilayerFrameworkSample.DAL.Interface;
+using MultilayerFrameworkSample.BLL.Interface;
+using System.Reflection;
 
 namespace MultilayerFrameworkSample.WebApi
 {
@@ -85,6 +85,7 @@ namespace MultilayerFrameworkSample.WebApi
                     License = new OpenApiLicense { Name = apiName }//编辑许可证
                 });
                 c.OrderActionsBy(o => o.RelativePath);
+                c.CustomOperationIds(u => u.TryGetMethodInfo(out MethodInfo methodInfo) ? methodInfo.Name : u.GroupName);
 
                 var xmlPath = Path.Combine(Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath, "MultilayerFrameworkSample.WebApi.xml");// 配置接口文档文件路径
                 var dtoXmlPath = Path.Combine(Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath, "MultilayerFrameworkSample.Dto.xml");
@@ -121,7 +122,8 @@ namespace MultilayerFrameworkSample.WebApi
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint($"/swagger/V1/swagger.json", $"{apiName} V1");
-                c.RoutePrefix = "";                     
+                c.RoutePrefix = "";
+                c.DisplayOperationId();
             });
 
             #endregion

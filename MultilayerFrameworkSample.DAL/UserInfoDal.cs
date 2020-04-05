@@ -6,8 +6,8 @@ using Dapper;
 using Microsoft.VisualBasic;
 using MultilayerFrameworkSample.Common;
 using MultilayerFrameworkSample.Common.ValueMapping;
+using MultilayerFrameworkSample.DAL.Interface;
 using MultilayerFrameworkSample.Dto;
-using MultilayerFrameworkSample.IDAL;
 using MultilayerFrameworkSample.Model.Entities;
 
 namespace MultilayerFrameworkSample.DAL

@@ -6,8 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MultilayerFrameworkSample.Common\MultilayerFrameworkSample.Common.csproj" />
-    <ProjectReference Include="..\MultilayerFrameworkSample.IBLL\MultilayerFrameworkSample.IBLL.csproj" />
-    <ProjectReference Include="..\MultilayerFrameworkSample.IDAL\MultilayerFrameworkSample.IDAL.csproj" />
+    <ProjectReference Include="..\MultilayerFrameworkSample.DAL\MultilayerFrameworkSample.DAL.csproj" />
     <ProjectReference Include="..\MultilayerFrameworkSample.Model\MultilayerFrameworkSample.Model.csproj" />
   </ItemGroup>
 

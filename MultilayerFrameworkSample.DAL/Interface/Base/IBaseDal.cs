@@ -1,11 +1,15 @@
-﻿using MultilayerFrameworkSample.Model.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MultilayerFrameworkSample.Model.Base;
 
-namespace MultilayerFrameworkSample.IBLL.Base
+namespace MultilayerFrameworkSample.DAL.Interface.Base
 {
-    public interface IBaseBll<T> where T : Entity
+    /// <summary>
+    /// 数据操作基接口
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public interface IBaseDal<T> where T : Entity
     {
         /// <summary>
         /// 查找
@@ -23,18 +27,18 @@ namespace MultilayerFrameworkSample.IBLL.Base
         /// </summary>
         /// <param name="entity">实体</param>
         /// <param name="creator">添加者</param>
-        void Add(T entity, string creator = "0");
+        bool Add(T entity,string creator = "0");
         /// <summary>
         /// 修改
         /// </summary>
         /// <param name="entity">修改后的实体</param>
         /// <param name="mender">修改者</param>
-        void Modify(T entity, string mender = "0");
+        bool Modify(T entity, string mender = "0");
         /// <summary>
         /// 删除
         /// </summary>
         /// <param name="id">id</param>
         /// <param name="mender">删除者</param>
-        void Remove(string id, string mender = "0");
+        bool Remove(string id,string mender = "0");
     }
 }

@@ -12,7 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MultilayerFrameworkSample.Common\MultilayerFrameworkSample.Common.csproj" />
     <ProjectReference Include="..\MultilayerFrameworkSample.Dto\MultilayerFrameworkSample.Dto.csproj" />
-    <ProjectReference Include="..\MultilayerFrameworkSample.IDAL\MultilayerFrameworkSample.IDAL.csproj" />
     <ProjectReference Include="..\MultilayerFrameworkSample.Model\MultilayerFrameworkSample.Model.csproj" />
   </ItemGroup>
 

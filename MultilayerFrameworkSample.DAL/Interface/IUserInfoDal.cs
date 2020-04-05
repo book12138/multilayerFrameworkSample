@@ -1,15 +1,13 @@
-﻿using MultilayerFrameworkSample.Dto;
-using MultilayerFrameworkSample.Model.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MultilayerFrameworkSample.Dto;
+using MultilayerFrameworkSample.Model;
+using MultilayerFrameworkSample.Model.Entities;
 
-namespace MultilayerFrameworkSample.IBLL
+namespace MultilayerFrameworkSample.DAL.Interface
 {
-    /// <summary>
-    /// 用户业务处理操作类
-    /// </summary>
-    public interface IUserInfoBll : Base.IBaseBll<UserInfo>
+    public interface IUserInfoDal : Base.IBaseDal<UserInfo>
     {
         /// <summary>
         /// 检测账户是否存在

@@ -15,7 +15,7 @@ namespace MultilayerFrameworkSample.Common.ExceptionExtend
         /// 构造函数
         /// </summary>
         /// <param name="message">错误信息</param>
-        public UserInfoOperationException(string? message)
+        public UserInfoOperationException(string message)
             : base(message)
         { }
         /// <summary>
@@ -23,7 +23,7 @@ namespace MultilayerFrameworkSample.Common.ExceptionExtend
         /// </summary>
         /// <param name="message">错误消息</param>
         /// <param name="innerException"></param>
-        public UserInfoOperationException(string? message, Exception? innerException)
+        public UserInfoOperationException(string message, Exception innerException)
             :base(message,innerException)
         { }
     }

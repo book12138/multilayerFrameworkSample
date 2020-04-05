@@ -2,8 +2,7 @@
 using Microsoft.Data.SqlClient;
 using MultilayerFrameworkSample.DAL;
 using MultilayerFrameworkSample.DAL.Base;
-using MultilayerFrameworkSample.IDAL;
-using MultilayerFrameworkSample.IDAL.Base;
+using MultilayerFrameworkSample.DAL.Interface;
 using MultilayerFrameworkSample.Model.Base;
 using MultilayerFrameworkSample.Model.Entities;
 using System;

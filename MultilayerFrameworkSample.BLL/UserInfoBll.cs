@@ -1,7 +1,7 @@
 ﻿using MultilayerFrameworkSample.BLL.Base;
+using MultilayerFrameworkSample.BLL.Interface;
+using MultilayerFrameworkSample.DAL.Interface;
 using MultilayerFrameworkSample.Dto;
-using MultilayerFrameworkSample.IBLL;
-using MultilayerFrameworkSample.IDAL;
 using MultilayerFrameworkSample.Model.Entities;
 using System;
 using System.Collections.Generic;

@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MultilayerFrameworkSample.BLL.Interface;
 using MultilayerFrameworkSample.Common.ExceptionExtend;
 using MultilayerFrameworkSample.Dto;
-using MultilayerFrameworkSample.IBLL;
 using MultilayerFrameworkSample.WebApi.Model;
 
 namespace MultilayerFrameworkSample.WebApi.Controllers
